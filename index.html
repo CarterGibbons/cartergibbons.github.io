@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"> 
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script> 
+    <title> Carter Gibbons</title>
+</head>
+<body>
+    <p>
+        My first map will appear here:
+    </p>
+    <div id="mapId" style="height:400px; width: 600px"></div>
+    <script>
+    // Bandelier Hall East 35.0843° N, 106.6241° W 
+    // create a map variable "mymap" that points to the map placed in the mapId <div>
+    //zoom the view on bandelier hall east building at a 17 zoom level
+    var mymap = L.map('mapId').setView([35.0843, -106.6241],17);
+
+    // create a variable named "osm" that is ised to hold osm tile layer
+    var osm = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+
+    //add the osm tile layer to the map
+    osm.addTo(mymap);
+
+    //add a marker on the tile layer
+    var marker = L.marker([35.0843, -106.6241]).addTo(mymap);
+    
+    //add a popup
+    //popupps are usually ised when you want to attach info to an object on a map
+    marker.bindPopup("<b>Hello World!</b> <br><i>Bandelier Hall East</i> <br>University of New Mexico").openPopup();
+    // <b> bold text
+    // <br> tag for new line
+    // <i> for italic text
+    </script>
+</body>
+</html>
