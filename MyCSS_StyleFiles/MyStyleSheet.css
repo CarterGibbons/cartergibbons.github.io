@@ -1,53 +1,61 @@
+body {
+    background-color: rgb(205, 208, 209);
+}
 
-        body { background-color: rgb(205, 208, 209); } 
-        body {
-            position: relative;
-        }
+body {
+    position: relative;
+}
 
-        .affix {
-            top: 20px;
-            z-index: 9999 !important;
-        }
+.affix {
+    top: 20px;
+    z-index: 9999 !important;
+}
 
-        /* 
+/* 
         ul.nav-pills {
             top: 20px;
             position: fixed;
         } */
 
-        div.col-sm-9 div {
-            height: fit-content;
-            font-size: 28px;
-        }
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
 
-        #section1 {
-            color: #fff;
-            background-color: #3e5970;
-        }
+div.col-sm-9 div {
+    height: fit-content;
+    font-size: 28px;
+}
 
-        #section2 {
-            color: #fff;
-            background-color: #3e5970;
-        }
+#section1 {
+    color: #fff;
+    background-color: #3e5970;
+}
 
-        #section3 {
-            color: #fff;
-            background-color: #3e5970;
-        }
+#section2 {
+    color: #fff;
+    background-color: #3e5970;
+}
 
-        #section4 {
-            color: #fff;
-            background-color: #3e5970;
-        }
+#section3 {
+    color: #fff;
+    background-color: #3e5970;
+}
+
+#section4 {
+    color: #fff;
+    background-color: #3e5970;
+}
 
 
 
-        @media screen and (max-width: 810px) {
+@media screen and (max-width: 810px) {
 
-            #section1,
-            #section2,
-            #section3,
-            #section4 {
-                margin-left: 150px;
-            }
-        }
+    #section1,
+    #section2,
+    #section3,
+    #section4 {
+        margin-left: 150px;
+    }
+}
